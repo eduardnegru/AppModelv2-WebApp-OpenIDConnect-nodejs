@@ -1,6 +1,6 @@
 exports.creds = {
   // Required
-  identityMetadata: 'https://login.microsoftonline.com/<tenant_name>.onmicrosoft.com/v2.0/.well-known/openid-configuration', 
+  identityMetadata: 'https://login.microsoftonline.com/adrianeduardnegrugmail.onmicrosoft.com/v2.0/.well-known/openid-configuration', 
   // or equivalently: 'https://login.microsoftonline.com/<tenant_guid>/v2.0/.well-known/openid-configuration'
   //
   // or you can use the common endpoint
@@ -8,11 +8,11 @@ exports.creds = {
   // To use the common endpoint, you have to either turn `validateIssuer` off, or provide the `issuer` value.
 
   // Required, the client ID of your app in AAD  
-  clientID: '<your_client_id>',
+  clientID: '59dc5348-558b-4d0d-8bb0-f0caaca7bc5c',
 
   // Required if `responseType` is 'code', 'id_token code' or 'code id_token'. 
   // If app key contains '\', replace it with '\\'.
-  clientSecret: '<your_client_secret>', 
+  clientSecret: 'mAt7Q~cm0S5l2E.JyaOFzSJuCxygNVnY6PBE3', 
 
   // Required, must be 'code', 'code id_token', 'id_token code' or 'id_token'
   // If you want to get access_token, you must use 'code', 'code id_token' or 'id_token code' 
@@ -22,7 +22,7 @@ exports.creds = {
   responseMode: 'form_post', 
 
   // Required, the reply URL registered in AAD for your app
-  redirectUrl: 'http://localhost:3000/auth/openid/return', 
+  redirectUrl: 'https://demoappazuread.azurewebsites.net/auth/openid/return', 
 
   // Required if we use http for redirectUrl
   allowHttpForRedirectUrl: true,
